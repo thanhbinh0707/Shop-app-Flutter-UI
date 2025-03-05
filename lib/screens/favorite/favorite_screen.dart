@@ -12,7 +12,7 @@ class FavoriteScreen extends StatelessWidget {
     return SafeArea(
       child: Column(
         children: [
-          const SizedBox(height: 16),
+          const SizedBox(height: 10),
           Text(
             "Favorites",
             style: Theme.of(context).textTheme.titleLarge,
