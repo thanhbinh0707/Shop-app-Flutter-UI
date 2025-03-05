@@ -19,7 +19,7 @@
 => Bottom Navigation Bar (added)
 
 ## Photos
-![Preview](md1.png)
-![Preview](md2.png)
-![Preview](md3.png)
-![Preview](md4.png)
+![Preview](1.png)
+![Preview](2.png)
+![Preview](3.png)
+![Preview](4.png)
