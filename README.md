@@ -23,6 +23,3 @@
 ![Preview](md2.png)
 ![Preview](md3.png)
 ![Preview](md4.png)
-![Preview](5.png)
-![Preview](6.png)
-![Preview](7.png)
