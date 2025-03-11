@@ -1,4 +1,4 @@
-# Flutter E-Commerce App Template
+# E-commerce-shop app-Flutter-UI
 
 ## Screens it contains:
 
