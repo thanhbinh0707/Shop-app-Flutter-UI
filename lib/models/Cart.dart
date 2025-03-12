@@ -1,10 +1,15 @@
 import 'Product.dart';
+import '../screens/cart/cart_screen.dart';
 
 class Cart {
   final Product product;
   final int numOfItem;
 
   Cart({required this.product, required this.numOfItem});
+
+  get id => null;
+
+  static fromJson(json) {}
 }
 
 // Demo data for our cart

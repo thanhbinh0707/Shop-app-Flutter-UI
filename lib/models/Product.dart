@@ -19,6 +19,8 @@ class Product {
     required this.price,
     required this.description,
   });
+
+  static fromJson(item) {}
 }
 
 // Our demo Products
@@ -174,3 +176,68 @@ List<Product> demoProducts = [
 
 const String description =
     "Wireless Controller for PS4™ gives you what you want in your gaming from over precision control your games to sharing …";
+// import 'package:flutter/material.dart';
+
+// class Product {
+//   final String id;
+//   final String name;
+//   final String description;
+//   final double price;
+//   final String category;
+//   final bool isAvailable;
+//   final String itemPic;
+//   final bool isFavourite;
+//   final bool isPopular;
+//   final List<Color> colors;
+
+//   Product({
+//     required this.id,
+//     required this.name,
+//     required this.description,
+//     required this.price,
+//     required this.category,
+//     this.isAvailable = false,
+//     required this.itemPic,
+//     this.isFavourite = false,
+//     this.isPopular = false,
+//     this.colors = const [], // Default empty list to prevent null issues
+//   });
+
+//   // Convert from JSON to Dart object
+//   factory Product.fromJson(Map<String, dynamic> json) {
+//     return Product(
+//       id: json['_id'], // API usually returns _id
+//       name: json['name'],
+//       description: json['description'],
+//       price: (json['price'] as num).toDouble(), // Ensuring type safety
+//       category: json['category'] ?? '', // Default to empty string if missing
+//       itemPic: json['itemPic'] ?? '', // Default to empty string if missing
+//       isAvailable: json['isAvailable'] ?? false,
+//       isFavourite: json['isFavourite'] ?? false,
+//       isPopular: json['isPopular'] ?? false,
+//       colors: (json['colors'] as List<dynamic>?)
+//               ?.map((color) =>
+//                   Color(int.parse(color))) // Convert hex string to Color
+//               .toList() ??
+//           [], // Default to empty list if null
+//     );
+//   }
+
+//   // Convert from Dart to JSON for sending to the server
+//   Map<String, dynamic> toJson() {
+//     return {
+//       "_id": id, // Keep consistent with API format
+//       "name": name,
+//       "description": description,
+//       "price": price,
+//       "category": category,
+//       "itemPic": itemPic,
+//       "isAvailable": isAvailable,
+//       "isFavourite": isFavourite,
+//       "isPopular": isPopular,
+//       "colors": colors
+//           .map((color) => color.value.toRadixString(16))
+//           .toList(), // Convert Color to hex string
+//     };
+//   }
+// }

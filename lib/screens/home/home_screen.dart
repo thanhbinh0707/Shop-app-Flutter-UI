@@ -22,7 +22,7 @@ class HomeScreen extends StatelessWidget {
               HomeHeader(),
               DiscountBanner(),
               // Categories(),
-              TopAutors(),
+              // TopAutors(),
               SizedBox(height: 20),
               SpecialOffers(),
               SizedBox(height: 20),
